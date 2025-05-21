@@ -1,0 +1,32 @@
+[
+  {
+    "name": "CocaCola",
+    "price": "$3.00",
+    "image": "/img/cocacola.jpg"
+  },
+  {
+    "name": "Fanta",
+    "price": "$3.50",
+    "image": "/img/fanta.jpg"
+  },
+  {
+    "name": "Pepsi",
+    "price": "$2.00",
+    "image": "/img/pepsi.jpg"
+  },
+  {
+    "name": "Lays",
+    "price": "$4.00",
+    "image": "/img/lays.jpg"
+  },
+  {
+    "name": "Pringles",
+    "price": "$6.00",
+    "image": "/img/pringles.jpg"
+  },
+  {
+    "name": "Takis",
+    "price": "$2.00",
+    "image": "/img/takis.jpg"
+  }
+]
