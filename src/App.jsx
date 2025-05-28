@@ -5,6 +5,7 @@ import { FaHome } from "react-icons/fa";
 import Home from "./components/guest/Home";
 import Shop from "./components/guest/Shop";
 import Testimoni from "./components/guest/Testimoni";
+import Products from "./pages/Products";
 const Dashboard = React.lazy(() => import("./pages/Dashboard"));
 const Orders = React.lazy(() => import("./pages/Orders"));
 const Customers = React.lazy(() => import("./pages/Customers"));
@@ -22,6 +23,7 @@ const GuestLayout = React.lazy(() => import("./layouts/GuestLayout"));
 const Navbar = React.lazy(() => import("./components/guest/Navbar")); 
 const About = React.lazy(() => import("./components/guest/About")); 
 const Topproduk = React.lazy(() => import("./components/guest/Topproduk")); 
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
 
 
 function App() {
@@ -33,6 +35,8 @@ function App() {
         <Route path="/orders" element={<Orders />} />
         <Route path="/customers" element={<Customers />} />
         <Route path="/users" element={<Users />} />
+        <Route path="products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetail />} /> 
         {/* Error Pages
               <Route path="/error400" element={
                 <ErrorPage 
