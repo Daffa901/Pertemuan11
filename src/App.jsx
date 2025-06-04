@@ -24,6 +24,7 @@ const Navbar = React.lazy(() => import("./components/guest/Navbar"));
 const About = React.lazy(() => import("./components/guest/About")); 
 const Topproduk = React.lazy(() => import("./components/guest/Topproduk")); 
 const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
+const Notes = React.lazy(() => import("./pages/Notes"))
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/orders" element={<Orders />} />
         <Route path="/customers" element={<Customers />} />
         <Route path="/users" element={<Users />} />
+        <Route path="/notes" element={<Notes />} />
         <Route path="products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} /> 
         {/* Error Pages

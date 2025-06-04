@@ -1,6 +1,6 @@
 // src/components/ListMenu.jsx
 import { NavLink } from "react-router-dom";
-import { MdDashboard, MdFastfood, MdPeople, MdShoppingCart, MdPerson, MdError } from "react-icons/md";
+import { MdDashboard, MdFastfood, MdPeople, MdShoppingCart, MdPerson, MdError, MdNoTransfer, MdBookmark } from "react-icons/md";
 
 export default function ListMenu() {
   const menuClass = ({ isActive }) =>
@@ -17,6 +17,7 @@ export default function ListMenu() {
     { to: "/customers", label: "Customers", icon: <MdPeople /> },
     { to: "/users", label: "Users", icon: <MdPerson /> },
     { to: "/products", label: "Products", icon: <MdFastfood /> },
+    { to: "/notes", label: "Notes", icon: <MdBookmark /> },
     { to: "/notfound", label: "Error 404", icon: <MdError /> },
     { to: "/error403", label: "Error 403", icon: <MdError /> },
     { to: "/error401", label: "Error 401", icon: <MdError /> },
